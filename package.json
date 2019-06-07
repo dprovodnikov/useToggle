@@ -1,5 +1,5 @@
 {
-  "name": "use-toggle",
+  "name": "@dprovodnikov/use-toggle",
   "version": "1.0.0",
   "description": "A react hook containing basic toggle behaviour",
   "main": "dist/index.js",
