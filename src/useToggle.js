@@ -8,12 +8,12 @@ const useToggle = function (initialValue, onChange) {
 
     setIsOn(nextValue);
     
-    if (onChange) {
+    if (!!onChange) {
       onChange(nextValue);
     }
   };
 
-  return [isOn, useCallback(toggle, [isOn])];
+  return [isOn, useCallback(toggle, [isOn, onChange])];
 };
 
 export default useToggle;
