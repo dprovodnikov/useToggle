@@ -7,7 +7,10 @@ const useToggle = function (initialValue, onChange) {
     const nextValue = !isOn;
 
     setIsOn(nextValue);
-    onChange(nextValue);
+    
+    if (onChange) {
+      onChange(nextValue);
+    }
   };
 
   return [isOn, useCallback(toggle, [isOn])];
